@@ -1,0 +1,51 @@
+<fieldset class="row border">
+  <legend>PowerComponent</legend>
+  <div class="col-sm-12">
+    <form action="">
+      <div class="form-group">
+        <p><label for="initialPowerLevel">Initial Power Level: </label><input type="number" class="form-input" max="100" min="0" name="powerLevel" [(ngModel)]="powerLevel"></p>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col-sm-4">
+        <fieldset class="border">
+          <legend>Human Component</legend>
+          <app-human [oldPower]="powerLevel" [multiplier]="1" [type]="'Human'"></app-human>
+        </fieldset>
+      </div>
+      <div class="col-sm-4">
+        <fieldset class="border">
+          <legend>Saiyan Component</legend>
+          <app-human [oldPower]="powerLevel" [multiplier]="10" [type]="'Saiyan'"></app-human>
+        </fieldset>
+      </div>
+      <div class="col-sm-4">
+        <fieldset class="border">
+          <legend>Super Saiyan Component</legend>
+          <app-human [oldPower]="powerLevel" [multiplier]="90" [type]="'Human'"></app-human>
+        </fieldset>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <fieldset class="border">
+          <legend>Super Saiyan Two Component</legend>
+          <app-human [oldPower]="powerLevel" [multiplier]="150" [type]="'Human'"></app-human>
+        </fieldset>
+      </div>
+      <div class="col-sm-4">
+        <fieldset class="border">
+          <legend>Super Saiyan Three Component</legend>
+          <app-human [oldPower]="powerLevel" [multiplier]="250" [type]="'Human'"></app-human>
+        </fieldset>
+      </div>
+      <div class="col-sm-4">
+        <fieldset class="border">
+          <legend>Super Saiyan Four Component</legend>
+          <app-human [oldPower]="powerLevel" [multiplier]="500" [type]="'Human'"></app-human>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</fieldset>
